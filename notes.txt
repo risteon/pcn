@@ -1,0 +1,16 @@
+# Setup Point Completion Network
+
+* clone from github, use my fork.
+* create conda env with python3.7 `conda create ...` , `conda install python=3.7`, `conda install numpy scipy matplotlib`
+* install latest tf1 tensorflow `pip install tensorflow==1.15`
+* install open3d `conda install -c open3d-admin open3d`
+* apparently, install cython `conda install cython`
+* need also other dependencies: scikit-learn `conda install scikit-learn`, `conda install addict`, `conda install pandas`, `conda install plyfile`
+* `pip install pyyaml`
+* apparently, install arrow with conda: `conda install pyarrow` and delete pyarrow from requirements.txt. Pinning the pyarrow version to 0.10 did not work due to conflicts.
+
+* install pcn requirements `pip install -r requirements.txt`. 
+
+* run updated makefile in pc_distance folder
+
+* download stuff from google drive and put it into the data folder (see Readme in data folder)
